@@ -1,0 +1,10 @@
+# The game bundles its own OFL font (Baloo 2); it is not packaged in Debian/Ubuntu.
+tuxoflood: font-in-non-font-package [usr/share/tuxoflood/tuxoflood/assets/fonts/*]
+tuxoflood: font-outside-font-dir [usr/share/tuxoflood/tuxoflood/assets/fonts/*]
+# The OFL licence text is kept next to the bundled font, as the OFL requires it to travel with the font.
+tuxoflood: package-contains-documentation-outside-usr-share-doc [usr/share/tuxoflood/tuxoflood/assets/fonts/OFL.txt]
+# The real launcher is /usr/games/tuxoflood; /usr/bin/tuxoflood is only a compatibility symlink
+# so the command works even where /usr/games is not on PATH.
+tuxoflood: package-section-games-but-has-usr-bin
+# Python package directory inside the private module dir (/usr/share/<pkg>/<pkg>/), the usual layout.
+tuxoflood: repeated-path-segment tuxoflood [usr/share/tuxoflood/tuxoflood/]

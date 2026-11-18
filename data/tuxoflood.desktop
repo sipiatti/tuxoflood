@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=TuxoFlood
+Name[hu]=TuxoFlood
+GenericName=Colour Flood Puzzle
+GenericName[hu]=Színkitöltő fejtörő
+Comment=Flood the whole board with one colour before you run out of moves
+Comment[hu]=Áraszd el az egész pályát egy színnel, mielőtt elfogynak a lépéseid
+Exec=tuxoflood
+Icon=tuxoflood
+Terminal=false
+Categories=Game;LogicGame;
+Keywords=flood;colour;color;puzzle;penguin;linux;
+Keywords[hu]=szín;kitöltés;fejtörő;pingvin;logika;

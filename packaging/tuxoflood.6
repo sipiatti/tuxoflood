@@ -1,0 +1,74 @@
+.TH TUXOFLOOD 6 "2026-11-18" "tuxoflood @VERSION@" "Games"
+.SH NAME
+tuxoflood \- penguin-themed colour-flood puzzle with a move limit
+.SH SYNOPSIS
+.B tuxoflood
+.RB [ \-\-fullscreen ]
+.RB [ \-\-mute ]
+.RB [ \-\-lang " " hu | en ]
+.RB [ \-\-version ]
+.RB [ \-h | \-\-help ]
+.SH DESCRIPTION
+.B tuxoflood
+is a Flood-It style puzzle. The penguin's area starts in the top-left
+corner of a board of coloured tiles. Picking a colour recolours the area,
+and every touching tile of that colour joins it. Fill the whole board with
+one colour before the move limit runs out; otherwise the level is lost and
+starts again on a new board. There is no time limit. The move limit of each
+board is the length of the built-in solver's solution (the "penguin par")
+plus a few spare moves, which shrink as the levels go up. Boards grow from
+6x6 with 3 colours to 26x26 with 16 colours, followed by endless levels.
+.SH OPTIONS
+.TP
+.B \-\-fullscreen
+Start in fullscreen mode.
+.TP
+.B \-\-mute
+Do not open the audio device (no music, no sound effects).
+.TP
+.BR \-\-lang " " hu | en
+User interface language (default: the saved setting, initially Hungarian).
+.TP
+.B \-\-version
+Print the version and exit.
+.TP
+.BR \-h ", " \-\-help
+Show a short help text and exit.
+.SH CONTROLS
+.TP
+.B Left click
+on a colour button or on any board tile: play that colour
+.TP
+.BR 1 \(en 9 ", " 0 ", " Q " " W " " E " " R " " T " " Y
+play colour 1\(en16
+.TP
+.B N
+new board on the same level
+.TP
+.B C
+colour-blind symbols on/off
+.TP
+.BR P " or " Esc
+pause menu
+.TP
+.B M
+music on/off
+.TP
+.B S
+sound effects on/off
+.TP
+.B F11
+toggle fullscreen
+.SH FILES
+.TP
+.I ~/.local/share/tuxoflood/progress.json
+progress, statistics, high scores and settings (honours
+.BR XDG_DATA_HOME ).
+.SH ENVIRONMENT
+.TP
+.B TUXOFLOOD_DATA_DIR
+override the directory of
+.IR progress.json .
+.SH AUTHOR
+Siposs Attila <sipiatti@gmail.com>. Created with vibe coding, with the help of Grok Bot. Code under the MIT (Expat) license; artwork and audio
+CC0\-1.0; Baloo 2 font under the SIL Open Font License 1.1.

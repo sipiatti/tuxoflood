@@ -1,0 +1,9 @@
+tuxoflood (0.1.0) unstable; urgency=medium
+
+  * Initial release: penguin themed colour-flood puzzle (Flood-It style)
+    with 23 levels growing from 6x6 / 3 colours to 26x26 / 16 colours
+    plus endless mode, a move limit computed from a built-in solver,
+    stars and scoring, colour-blind symbols, Hungarian and English user
+    interface, statistics, sound effects and music.
+
+ -- Siposs Attila <sipiatti@gmail.com>  Wed, 18 Nov 2026 12:00:00 +0100

@@ -1,0 +1,20 @@
+Package: tuxoflood
+Version: @VERSION@
+Architecture: all
+Maintainer: @MAINTAINER@
+Installed-Size: @INSTALLED_SIZE@
+Depends: python3 (>= 3.10), python3-pygame (>= 2.1)
+Section: games
+Priority: optional
+Description: penguin-themed colour-flood puzzle with a move limit
+ TuxoFlood is a colourful puzzle in the spirit of Flood-It. A penguin
+ starts in the top-left corner of a board of coloured ice tiles. Each
+ move recolours the penguin's area, which then swallows every touching
+ tile of the new colour. Fill the whole board with a single colour
+ before the move limit runs out.
+ .
+ The boards grow from 6x6 with 3 colours to 26x26 with 16 colours, then
+ an endless mode follows. The move limit of every board comes from a
+ built-in solver. Features include stars and scores, hover preview,
+ colour-blind symbols, flood animations, statistics, high scores, sound
+ effects and music. The user interface is in Hungarian and English.
